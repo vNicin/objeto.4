@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 144573289}
   - component: {fileID: 144573288}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,15 +150,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4132a018546ed854d89f0d9fcfd6f7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  computeShader: {fileID: 7200000, guid: c4e6b17b16fec8349b702da34f26c6bf, type: 3}
+  computeShader: {fileID: 7200000, guid: 950df55f0f919b6448ae1eedf0201baf, type: 3}
   iteractions: 50
-  count: 10
-  modelPref: {fileID: 649684703542615620, guid: f2f6783c3ecefb24f91ec8e8e71f23a6,
+  count: 50
+  modelPref: {fileID: 6354214188478916658, guid: 003f4157e06c8654c98a5d3b4c9e66cc,
     type: 3}
+  posY: []
+  ground: {fileID: 1787381901}
   massaMinima: 1
   massaMaxima: 100
-  forcaMinima: 2
-  forcaMaxima: 15
+  forcaMinima: 1
+  forcaMaxima: 5
+  falso: 0
+  fallCPU: 0
+  fallGPU: 0
+  colorChanged: 0
 --- !u!4 &144573289
 Transform:
   m_ObjectHideFlags: 0
@@ -258,13 +264,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.26490045, y: 0.7061714, z: -0.3292931, w: 0.5680809}
+  m_LocalPosition: {x: -37, y: 21.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 102.37, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0, z: -35.39}
+  m_LocalPosition: {x: 0.2, y: 8, z: -76.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -361,8 +367,8 @@ GameObject:
   - component: {fileID: 1787381903}
   - component: {fileID: 1787381902}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: chao
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,7 +404,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 19de44cfc1058864a9b2604db955073b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -435,8 +441,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787381901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -18.52, z: 0}
-  m_LocalScale: {x: 73.5, y: 1, z: 5}
+  m_LocalPosition: {x: 0, y: -25.42, z: -11.010002}
+  m_LocalScale: {x: 73.5, y: 1, z: 64.11}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4

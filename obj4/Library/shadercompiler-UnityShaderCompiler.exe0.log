@@ -1,2 +1,41 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: compileSnippet
+  api=4 type=0 insize=1602 outsize=1894 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL LIGHTPROBE_SH _EMISSION pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1602 outsize=6918 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL LIGHTPROBE_SH _EMISSION pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: preprocessCompute
+  insize=421 outsize=420 ok=1
+Cmd: preprocessCompute
+  insize=527 outsize=526 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 4 at CuboCai.compute(3): syntax error: unexpected token 'FreeFall'
+  api=4 insize=526 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=526 outsize=525 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 4 at CuboCai.compute(3): syntax error: unexpected token 'CuboCai'
+  api=4 insize=525 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=525 outsize=524 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 4 at CuboCai.compute(3): syntax error: unexpected token 'CuboCai'
+  api=4 insize=524 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=594 outsize=593 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at CuboCai.compute(19): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at CuboCai.compute(21): unrecognized identifier 'FreeFall'
+  error: 2 plat 4 at CuboCai.compute(21): unrecognized identifier 'fallGPU'
+  api=4 insize=593 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=587 outsize=586 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at CuboCai.compute(19): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at CuboCai.compute(21): undeclared identifier 'cubeFall'
+  api=4 insize=586 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=586 outsize=585 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at CuboCai.compute(19): signed/unsigned mismatch, unsigned assumed
+  api=4 insize=585 outsize=697 ok=1

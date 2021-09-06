@@ -1,0 +1,33 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct FreeFall
+{
+	 float velocidadeInicial;
+	 float deltaDistance;
+};
+
+RWStructuredBuffer<FreeFall> cubeFall;
+
+float posI;
+float velI;
+float deltaTime;
+int nCubes;
+
+[numthreads(10,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	if (id.x < nCubes)
+	{
+		FreeFall fallGPU = cubeFall[id.x];
+
+		float vF = velI + 9.8f * deltaTime;
+		float dP = ((velI + vF) * deltaTime) / 2;
+		float pF = posI - dP;
+
+		fallGPU.deltaDistance = pF;
+		fallGPU.velocidadeInicial = vF;
+
+		cubeFall[id.x] = fallGPU;
+	}
+}

@@ -62,11 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\chao.cs" />
     <Compile Include="Assets\randColor.cs" />
-    <Compile Include="Assets\renderTexture.cs" />
-    <None Include="Assets\TextureViewCS.compute" />
-    <None Include="Assets\colorRandom.compute" />
+    <None Include="Assets\scripts\FreeFallCompute.compute" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
