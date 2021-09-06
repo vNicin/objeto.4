@@ -17,6 +17,12 @@ public class randColor : MonoBehaviour
     Cube[] data;
     public GameObject modelPref;
 
+    public int massaMinima;
+    public int massaMaxima;
+
+    public int forcaMinima;
+    public int forcaMaxima;
+    int id = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +61,11 @@ public class randColor : MonoBehaviour
                      }
                 }
             }
+        }
+        if (data != null)
+        {
+            applyGravity();
+          
         }
 
         if(data != null)
@@ -100,6 +111,33 @@ public class randColor : MonoBehaviour
                 data[i * count + j].color = _color;
             }
         }
+    }
+
+    public static void changeColor(GameObject ga)
+    {
+        Color _color = Random.ColorHSV();
+        Material objeto = ga.GetComponent<MeshRenderer>().material;
+        objeto.color = _color;
+    }
+
+    private void applyGravity()
+    {
+
+        
+        if (id == 1)
+        {
+            for (int i = 0; i < gameObjects.Length; i++)
+            {
+
+                int random = Random.Range(massaMinima, massaMaxima);
+                int forcaRandom = Random.Range(forcaMinima, forcaMaxima);
+                gameObjects[i].GetComponent<Rigidbody>().mass = random;
+                gameObjects[i].GetComponent<Rigidbody>().drag = forcaRandom;
+            }
+            id++;
+        }
+
+
     }
 
 

@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\chao.cs" />
     <Compile Include="Assets\randColor.cs" />
     <Compile Include="Assets\renderTexture.cs" />
     <None Include="Assets\TextureViewCS.compute" />
